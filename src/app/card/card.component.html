@@ -1,0 +1,8 @@
+  <mat-card (click)="toggleContent()">
+    <mat-card-title>
+        <h2>{{ title }}</h2>
+    </mat-card-title>
+    <mat-card-content *ngIf="isContentVisible">
+        <p>{{ content }}</p>
+    </mat-card-content>
+  </mat-card>
